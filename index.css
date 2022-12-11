@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #0ea5e9;
+}
+
+html {
+    line-height: 1.5;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+.container {
+    width: 800px;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    position: relative;
+    background: #fff;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right, #22d3ee, #0ea5e9);
+    transform: rotate(-3deg);
+    z-index: -1;
+}
+
+.info-container {
+    display: flex;
+}
+
+.info-container img {
+    width: 150px;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
+    height: 200px;
+    object-fit: cover;
+}
+
+.info {
+    /* 自动填充满 */
+    flex-grow: 1;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: 20px 280px 70px 1fr;
+    column-gap: 10px;
+}
+
+.info .name {
+    grid-area: 1/1/2/5;
+    font-size: 2em;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.info .name span {
+    font-size: 14px;
+}
+
+.label {
+    color: #888;
+    text-align: right;
+}
+
+
+/* 学习经历 */
+
+.block {
+    margin: 30px auto;
+}
+
+.block-title {
+    border-bottom: 1px solid #cccc;
+    padding: 10px 0;
+}
+
+.block-content {
+    padding: 20px 0;
+}
+
+.time-line {
+    position: relative;
+}
+
+.time-line::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 2px;
+    height: 100%;
+    background: #22d3ee;
+}
+
+.time-line .item {
+    padding-left: 20px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.time-line .item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 4px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #22d3ee;
+}
+
+.gray {
+    color: #888;
+}
+
+
+/* 工作经历 */
+
+.detail {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 20px;
+}
+
+.skills .item {
+    background: #f0fdff;
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    line-height: 130px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.skills .item::before {
+    content: '';
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    line-height: 130px;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    border: 5px solid #c3f1f8;
+    box-sizing: border-box;
+}
+
+.skills .item.level1::before {
+    border-top-color: #0ea5e7;
+}
+
+.skills .item.level2::before {
+    border-top-color: #0ea5e7;
+    border-right-color: #0ea5e7;
+}
+
+.skills .item.level3::before {
+    border-top-color: #0ea5e7;
+    border-right-color: #0ea5e7;
+    border-bottom-color: #0ea5e7;
+}
+
+.skills .item.level4::before {
+    border-top-color: #0ea5e7;
+    border-bottom-color: #0ea5e7;
+    border-right-color: #0ea5e7;
+    border-left-color: #0ea5e7;
+}
+
+.skills .item.level5::before {
+    border-top-color: #0ea5e7;
+    border-right-color: #0ea5e7;
+}
+
+.skills .item.level6::before {
+    border-top-color: #0ea5e7;
+    border-right-color: #0ea5e7;
+}
+
+
+/* 项目经验 */
+
+.projects {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    /* 设置间隙 */
+    gap: 10px;
+}
+
+.projects h3 {
+    grid-area: 1/1/1/3;
+}
+
+.projects p {
+    margin-bottom: 1em;
+}
+
+.intro {
+    font-size: 16px;
+    line-height: 2;
+}
