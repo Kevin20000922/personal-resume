@@ -81,7 +81,7 @@ html {
 /* 学习经历 */
 
 .block {
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
 .block-title {
@@ -128,6 +128,23 @@ html {
     color: #888;
 }
 
+.blod{
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    display: block;
+}
+
+
+.context{
+    list-style: block;
+}
+
+.context li{
+    list-style: block;
+    margin-left: 15px;
+}
+
+
 
 /* 工作经历 */
 
@@ -167,18 +184,21 @@ html {
 }
 
 .skills .item.level1::before {
-    border-top-color: #0ea5e7;
+    border-bottom-color: #0ea5e7;
+    border-right-color: #0ea5e7;
+    border-left-color: #0ea5e7;
 }
 
 .skills .item.level2::before {
     border-top-color: #0ea5e7;
     border-right-color: #0ea5e7;
+    border-left-color: #0ea5e7;
 }
 
 .skills .item.level3::before {
     border-top-color: #0ea5e7;
-    border-right-color: #0ea5e7;
     border-bottom-color: #0ea5e7;
+    border-left-color: #0ea5e7;
 }
 
 .skills .item.level4::before {
@@ -190,11 +210,14 @@ html {
 
 .skills .item.level5::before {
     border-top-color: #0ea5e7;
+    border-bottom-color: #0ea5e7;
     border-right-color: #0ea5e7;
+    border-left-color: #0ea5e7;
 }
 
 .skills .item.level6::before {
     border-top-color: #0ea5e7;
+    border-bottom-color: #0ea5e7;
     border-right-color: #0ea5e7;
 }
 
